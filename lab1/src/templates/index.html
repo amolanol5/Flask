@@ -18,21 +18,21 @@
     <![endif]-->
   </head>
   <body>
-    
-<div class="container">
-  <h1>APP ANDRES!</h1>
 
-  <form action="{{url_for('status')}}" method="GET">
+
+<div class="container">
+  <h1>{{varmola}}!</h1>
+
+  <form action="{{url_for('status')}}" method="POST">
     <div class="form-group">
-      <label for="exampleInputEmail1">Name</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" name="name">
+      <label for="this is my name">Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" name="nombre">
       <small id="emailHelp" class="form-text text-muted">We'll never share your name with anyone else.</small>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
     
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
