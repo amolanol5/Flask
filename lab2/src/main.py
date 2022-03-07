@@ -17,21 +17,25 @@ def isOpen(ip,port):
         return True
     except:
         return False
-
-#validation
-if isOpen(ip,port):
-    var1 = "ok"
-else:
-    var1 = "fail"
             
 #routes
 @app.route("/")
 def index():
+    #validation
+    if isOpen(ip,port):
+        var1 = "ok"
+    else:
+        var1 = "fail"
     return var1
 
 #routes
 @app.route("/status")
 def status():
+    #validation
+    if isOpen(ip,port):
+        var1 = "ok"
+    else:
+        var1 = "fail"
     return var1
 
 
